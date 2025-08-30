@@ -1,9 +1,19 @@
+/*
+BYU-Pathway CS210 - Programming with Classes | 25T5 | Waldyr Junior
+Author: Akinsola David Akindileni
+W01 Exercise 2 Assignment
+    
+*/
+
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
+        // Clear the console
+        Console.Clear();
+
         // declare letter as a string variable
         string letter;
 
