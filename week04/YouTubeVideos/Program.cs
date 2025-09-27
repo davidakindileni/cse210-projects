@@ -16,14 +16,14 @@ namespace YouTubeVideos
     class Comment
     {
         // Properties: the name of the commenter and their comment text
-        public string CommenterName { get; set; }
-        public string Text { get; set; }
+        public string _commenterName { get; set; }
+        public string _text { get; set; }
 
         // Constructor to initialize a comment when created
         public Comment(string commenterName, string text)
         {
-            CommenterName = commenterName;
-            Text = text;
+            _commenterName = commenterName;
+            _text = text;
         }
     }
 
@@ -33,45 +33,45 @@ namespace YouTubeVideos
     class Video
     {
         // Properties for video details
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public int LengthInSeconds { get; set; }
+        public string _title { get; set; }
+        public string _author { get; set; }
+        public int _lengthInSeconds { get; set; }
 
         // A video has a list of comments
-        private List<Comment> comments = new List<Comment>();
+        private List<Comment> _comments = new List<Comment>();
 
         // Constructor to initialize a video when created
         public Video(string title, string author, int lengthInSeconds)
         {
-            Title = title;
-            Author = author;
-            LengthInSeconds = lengthInSeconds;
+            _title = title;
+            _author = author;
+            _lengthInSeconds = lengthInSeconds;
         }
 
         // Method to add a comment to this video
         public void AddComment(Comment comment)
         {
-            comments.Add(comment);
+            _comments.Add(comment);
         }
 
         // Method to return the number of comments
         public int GetNumberOfComments()
         {
-            return comments.Count;
+            return _comments.Count;
         }
 
         // Method to display all details of the video, including comments
         public void DisplayVideoInfo()
         {
-            Console.WriteLine($"Title: {Title}");
-            Console.WriteLine($"Author: {Author}");
-            Console.WriteLine($"Length: {LengthInSeconds} seconds");
+            Console.WriteLine($"Title: {_title}");
+            Console.WriteLine($"Author: {_author}");
+            Console.WriteLine($"Length: {_lengthInSeconds} seconds");
             Console.WriteLine($"Number of Comments: {GetNumberOfComments()}");
 
             Console.WriteLine("Comments:");
-            foreach (Comment comment in comments)
+            foreach (Comment comment in _comments)
             {
-                Console.WriteLine($" - {comment.CommenterName}: {comment.Text}");
+                Console.WriteLine($" - {comment._commenterName}: {comment._text}");
             }
 
             Console.WriteLine(new string('-', 40)); // Separator line for readability
