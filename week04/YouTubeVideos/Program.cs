@@ -2,21 +2,16 @@
 BYU-Pathway CS210 - Programming with Classes | 25T5 | Waldyr Junior
 Author: Akinsola David Akindileni
 W04 Assignment: YouTube Video Program - Main Class
-    
 */
 
 using System;
-using System.Collections.Generic;  // Needed for using List<T>
+using System.Collections.Generic;
 
-// =======================
-// Main Program
-// =======================
-
-class Program
+public class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        // Create a list to hold multiple videos
+        // Local variable: list of videos
         List<Video> videos = new List<Video>();
 
         // -------- Video 1 --------
@@ -55,7 +50,6 @@ class Program
             video.DisplayVideoInfo();
         }
 
-        // Pause so console window stays open (optional)
         Console.WriteLine();
         Console.WriteLine("Press any key to exit...");
         Console.ReadKey();
