@@ -16,6 +16,8 @@ public class ListingActivity : Activity
     "What are personal strengths of yours?",
     "Who are people that you have helped this week?",
     "When have you felt the Holy Ghost this month?",
+    "What did you do today that you feel you can do better",
+    "Who some people that you need to reach out to in love?",
     "Who are some of your personal heroes?"
     };
     private List<string> _userList = new List<string>();

@@ -4,6 +4,10 @@ Author: Akinsola David Akindileni
 W05 Team Activity: Mindfulness Design - Main Program
 */
 
+// Stretch requirements
+// 1. Remove used question in Reflection activity
+// 2. Add more prompts to Listing activity
+
 using System;
 
 class Program
