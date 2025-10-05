@@ -1,3 +1,9 @@
+/*
+BYU-Pathway CS210 - Programming with Classes | 25T5 | Waldyr Junior
+Author: Akinsola David Akindileni
+W05 Team Activity: Mindfulness Design - Main Program
+*/
+
 using System;
 
 class Program
